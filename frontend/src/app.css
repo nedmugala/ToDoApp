@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 30vh;
+    background: linear-gradient(180deg, orangered, rgba(11, 255, 255, 0.096));
+    border-bottom: 5px solid orangered;
+    margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular';
+    letter-spacing: 2px;
+}
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(66, 5, 66);
+    text-shadow: 1px 1px 2px black;
+    transition: all 0.3s ease;
+    &:hover{
+        color: orange;
+    }
+}
+main{
+    padding: 50px;
+}
+main div{
+    padding: 5px;
+}
+form{
+    padding: 10px;
+}
+form input, button{
+    margin: 2.5px
+}
+button{
+    padding: 2.5px;
+}
+input{
+    width: 300px;
+    height: 25px;
+    padding: 5px;
+    font-family: monospace;
+}
+.previewPane{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    background: linear-gradient(45deg, black,darkblue);
+    color: white;
+    height: 50vh;
+    padding: 30px;
+    box-shadow: 3px 3px black;
+    gap: 30px;
+}
+.note{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.note button {
+    padding: 5px;
+}
+.noteButton{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}

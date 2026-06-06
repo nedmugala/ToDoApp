@@ -1,0 +1,62 @@
+{
+  "notes": [
+    {
+      "content": "HTML5 Holy Grail Markup Language",
+      "important": false,
+      "id": "0EC7MGGa6_w"
+    },
+    {
+      "content": "JAVASCRIPT",
+      "important": false,
+      "id": "VSSx6F3YGgU"
+    },
+    {
+      "content": "REACT",
+      "important": false,
+      "id": "pCTfykLUC2w"
+    },
+    {
+      "id": "yNXADI4otL8",
+      "content": "Enter New Note",
+      "important": false
+    },
+    {
+      "id": "2z_paveFQ6A",
+      "content": "Enter New Note",
+      "important": true
+    },
+    {
+      "id": "xP-DXg3-y5U",
+      "content": "Enter New Note",
+      "important": true
+    },
+    {
+      "id": "o9hVH-IMErw",
+      "content": "Enter New Notee",
+      "important": true
+    },
+    {
+      "id": "ZYD-XA9Jfks",
+      "content": "Enter Ne",
+      "important": false
+    },
+    {
+      "id": "LrEhWTsyqWY",
+      "content": "This is a new note",
+      "important": false
+    },
+    {
+      "id": "PfG_AQ9a0pU",
+      "content": "This is a new note",
+      "important": false
+    }
+  ],
+  "morenotes": [
+    {
+      "name": "Neddy Mugala",
+      "important": true,
+      "id": "NeddyMugala"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
