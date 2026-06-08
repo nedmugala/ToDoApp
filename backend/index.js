@@ -70,11 +70,11 @@ app.get('/api/notes/:id', (request, response)=>{
         response.status(404).end()
     }
 })
-app.put('/api/notes/:id',(request, response)=>{
+app.put('/api/notes/important/:id',(request, response)=>{
     console.log(request.body)
     const id = request.params.id
     const note = notes.find(n=> n.id===id)
-    note.content = request.body.content
+    note.important = request.body.important
     response.json(note)
 
 })
