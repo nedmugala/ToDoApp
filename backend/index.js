@@ -46,12 +46,11 @@ app.post('/api/notes', (request,response)=>{
         "content" : body.content,
         "important" : body.important || false
     }
-    axios.post('http:localhost:3001/notes', note).then((res)=>{
-    notes.push(res.data)
-    console.log(res.data)
-    response.json(res.data)
-    })
-    
+   
+    notes.push(note)
+    console.log(note)
+    response.json(note)
+  
     
 })
 
