@@ -1,15 +1,10 @@
 const express = require('express')
-const axios = require('axios')
 const cors = require('cors')
 const app = express()
 app.use(cors())
 
 app.use(express.json())
-let notes =[]
-axios.get('http://localhost:3001/notes').then((response)=> {notes = response.data
-})
-console.log(notes)
-/*
+
 let notes =[{
 id: "1",
 content: "HTML is easy",
@@ -24,10 +19,14 @@ important: false
 id: "3",
 content: "GET and POST are the most important methods of HTTP protocol",
 important: true
-}
+},
+            {
+                id : "4",
+                content:"My Name is Neddy this is my first Deployed App",
+                important : true
+            }
 
 ]
-*/
 const idGenerator=()=>{
     let maxId = notes.length > 0? Math.max(...notes.map(n=>Number(n.id))) : 0
     return String(maxId+1)
@@ -56,7 +55,7 @@ app.post('/api/notes', (request,response)=>{
 })
 
 app.get('/', (request, response)=> {
-    response.send('<h1> Hello World! </h1>')
+    response.send('<h1> Hello World! </h1> <a href="/api/notes">Go to Notes </a>')
 })
 app.get('/api/notes', (request, response)=>{
     response.json(notes)
@@ -86,6 +85,6 @@ app.delete('/api/notes/:id', (request, response)=> {
     response.status(204).end()
 })
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 app.listen(PORT)
 console.log(`server running at port http://localhost:${PORT}`)
